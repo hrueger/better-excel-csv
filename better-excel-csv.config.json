@@ -1,0 +1,18 @@
+{
+    "input": "example.xlsx",
+    "outputs": [
+        {
+            "sheet": "Equipment",
+            "file": "Labeldrucker_Export_Equipment.csv"
+        },
+        {
+            "sheet": "Kabel",
+            "file": "Labeldrucker_Export_Kabel.csv"
+        }
+    ],
+    "options": {
+        "delimiter": ",",
+        "header": true,
+        "encoding": "utf8"
+    }
+}

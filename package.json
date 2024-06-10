@@ -1,0 +1,19 @@
+{
+  "name": "better-excel-csv",
+  "version": "1.0.0",
+  "license": "MIT",
+  "bin": "dist/index.mjs",
+  "main": "dist/index.mjs",
+  "packageManager": "yarn@4.2.2",
+  "devDependencies": {
+    "esbuild": "^0.21.5",
+    "exceljs": "^4.4.0"
+  },
+  "scripts": {
+    "start": "node .",
+    "build": "esbuild index.mjs --bundle --platform=node --format=esm --minify --outfile=dist/index.mjs --inject:./cjs-shim.js"
+  },
+  "files": [
+    "dist"
+  ]
+}
